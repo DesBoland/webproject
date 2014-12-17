@@ -1,0 +1,119 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+   <script type='text/javascript' src='http://code.jquery.com/jquery-1.4.4.min.js'></script>
+		<script type='text/javascript' src="Scripts/Script.js"></script>
+		<script type='text/javascript' src="Scripts/Conversion.js"></script>
+		<script type="text/javascript" src="http://currencyconverter.55uk.net/currency_converter_json.js"></script>
+	<meta charset="utf-8">
+
+	<title>Golf Club: Group 11</title>
+
+	<meta name="description" content="Responsive Header Nav">
+
+	<meta name="author" content="Treehouse">
+
+	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+
+		<link rel="stylesheet" href="css/styles.css">
+
+	<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<link rel="icon" 
+      type="image/png" 
+      href="Images/favicon.ico">
+</head>
+
+<body>
+
+	<header>
+
+		
+
+		<nav>
+			<a href="#" id="menu-icon"></a>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="courseprofile.html">Course Profile</a></li>
+				<li><a href="19thhole.html">19th Hole</a></li>
+				<li><a class="current" href="memberships.html">Fees & Memberships</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+
+	</header>
+<div id="mainDiv">
+
+	<section>
+
+		<h1>Memberships!</h1>
+		<p>We hope you are pleased with our new pricing range. Remember if you join as part of a group of more then 3 people you will get an extra discount!</p>
+		<center>
+			<img src="Images\golfmembership.jpg" alt="membership image"/> <br>
+			<table border="1" width="80%" summary="This table displays the Memberships">
+				<caption><strong>Membership price list</strong></caption>
+				<tr>
+					<th>Membership Type</th>
+					<th>Price</th>
+					<th>Conversion</th>
+					<th>Converted price</th>
+				</tr>
+				<tr>
+					<td>Full Membership</td>
+					<td> &#x20AC;980</td>
+					<td>
+						<select id="xxxto" onchange="myPrivateConverterOne('xratediv1','980','EUR');">
+							<option value="">Convert to ..</option>
+							<option value="GBP">GBP - British Pound</option>
+							<option value="USD">USD - U.S. Dollar</option>
+							<option value="CAD">CAD - Canadian Dollar</option>
+							<option value="AUD">AUD - Australian Dollar</option>
+							<option value="JPY">JPY - Japanese Yen</option>
+						</select>
+					</td>
+					<td>
+						<div id="xratediv1"></div>
+					</td>
+				</tr>
+			   <tr>
+					<td>Junior Membership</td>
+					<td> &#x20AC;500</td>
+					<td>
+						<select id="xxxto" onchange="myPrivateConverterOne('xratediv2','500','EUR');">
+							<option value="">Convert to ..</option>
+							<option value="GBP">GBP - British Pound</option>
+							<option value="USD">USD - U.S. Dollar</option>
+							<option value="CAD">CAD - Canadian Dollar</option>
+							<option value="AUD">AUD - Australian Dollar</option>
+							<option value="JPY">JPY - Japanese Yen</option>
+						</select>
+					</td>
+					<td>
+					<div id="xratediv2"></div></td> 
+				</tr>
+				<tr>
+					<td>Day Pass</td>
+					<td> &#x20AC;85</td>
+					<td>
+						<select id="xxxto" onchange="myPrivateConverterOne('xratediv3','85','EUR');">
+							<option value="">Convert to ..</option>
+							<option value="GBP">GBP - British Pound</option>
+							<option value="USD">USD - U.S. Dollar</option>
+							<option value="CAD">CAD - Canadian Dollar</option>
+							<option value="AUD">AUD - Australian Dollar</option>
+							<option value="JPY">JPY - Japanese Yen</option>
+						</select>
+					</td>
+					<td>
+						<div id="xratediv3"></div>
+					</td> 							 
+				</tr>
+			</table>
+		</center>
+	</section>
+	
+</div>
+</body>
+
+</html>

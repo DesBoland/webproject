@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+   
+	<meta charset="utf-8">
+
+	<title>Golf Club: Group 11</title>
+
+	<meta name="description" content="Responsive Header Nav">
+
+	<meta name="author" content="Treehouse">
+
+	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+
+		<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" 
+      type="image/png" 
+      href="Images/favicon.ico">
+	<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+ <style>
+    
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(
+53.387214,-6.348389),
+          zoom: 14,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+
+<body>
+
+	<header>
+
+		
+
+		<nav>
+			<a href="#" id="menu-icon"></a>
+			<ul>
+				<li><a class="current" href="index.html">Home</a></li>
+				<li><a href="courseprofile.html">Course Profile</a></li>
+				<li><a href="19thhole.html">19th Hole</a></li>
+				<li><a href="memberships.html">Fees & Memberships</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+
+	</header>
+<div id="mainDiv">
+
+	<section>
+
+		<h1>Map location</h1>
+		
+	     <br>
+		 <center>
+				<a  href="contactus.html"><img src="Images/goback.png" height="40px" alt="go back image"/></a>
+					</center>
+					<br>
+		<div id="map-canvas"></div>
+	</section>
+
+</div>
+</body>
+
+</html>
